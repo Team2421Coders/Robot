@@ -1,3 +1,3 @@
-#Robot
+Robot
 Main directory
 idk
