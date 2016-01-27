@@ -106,3 +106,52 @@ java.io.FileNotFoundException: /home/josh/WPILib Intro/sample.xml (No such file 
 
 !ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 19:56:16.637
 !MESSAGE Installedjava
+!SESSION 2016-01-26 20:08:27.689 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/Michael/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/Michael/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-01-26 20:08:28.480
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-01-26 20:08:44.584
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:08:49.157
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:08:49.170
+!MESSAGE Install necessary for tools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:08:49.438
+!MESSAGE unzip /var/folders/76/qg7fyy7977l2fdxhbzfnkw8r0000gn/T/tools-1932017784064303238.zip -d /Users/Michael/wpilib/tools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:08:50.083
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:08:50.092
+!MESSAGE Installing cpp if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:08:50.101
+!MESSAGE Install necessary for cpp
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:08:50.475
+!MESSAGE unzip /var/folders/76/qg7fyy7977l2fdxhbzfnkw8r0000gn/T/cpp-1786593880879369712.zip -d /Users/Michael/wpilib/cpp/current
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:08:54.090
+!MESSAGE Installedcpp
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:08:54.095
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:08:54.101
+!MESSAGE Install necessary for java
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:08:54.234
+!MESSAGE unzip /var/folders/76/qg7fyy7977l2fdxhbzfnkw8r0000gn/T/java-3546139217981610942.zip -d /Users/Michael/wpilib/java/current
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:09:04.563
+!MESSAGE Installedjava
