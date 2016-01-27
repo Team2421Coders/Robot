@@ -107,10 +107,13 @@ java.io.FileNotFoundException: /home/josh/WPILib Intro/sample.xml (No such file 
 !ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 19:56:16.637
 !MESSAGE Installedjava
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 !ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:02:22.188
 !MESSAGE Preferences initialized.
 =======
+=======
+>>>>>>> a5e91d23b4496fca924ce95f8603e729d8f7185e
 !SESSION 2016-01-26 20:08:27.689 -----------------------------------------------
 eclipse.buildId=4.5.1.M20150904-0015
 java.version=1.8.0_51
@@ -160,4 +163,34 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:09:04.563
 !MESSAGE Installedjava
+<<<<<<< HEAD
 >>>>>>> a5e91d23b4496fca924ce95f8603e729d8f7185e
+=======
+>>>>>>> a5e91d23b4496fca924ce95f8603e729d8f7185e
+!SESSION 2016-01-26 20:22:42.319 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.jdt.launching 1 0 2016-01-26 20:23:20.287
+!MESSAGE Installed JRE 'Java SE 8 [1.8.0_51]' removed due to missing VM type extension.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:23:30.935
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:23:30.935
+!MESSAGE Install necessary for tools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:23:33.827
+!MESSAGE unzip /tmp/tools-809329336780691312.zip -d /home/josh/wpilib/tools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:23:37.293
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:23:37.297
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:23:37.298
+!MESSAGE Installedjava
