@@ -106,3 +106,6 @@ java.io.FileNotFoundException: /home/josh/WPILib Intro/sample.xml (No such file 
 
 !ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 19:56:16.637
 !MESSAGE Installedjava
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-26 20:02:22.188
+!MESSAGE Preferences initialized.
