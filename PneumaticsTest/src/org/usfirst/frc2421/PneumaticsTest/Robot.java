@@ -12,6 +12,7 @@
 package org.usfirst.frc2421.PneumaticsTest;
 
 import edu.wpi.first.wpilibj.CANTalon;
+import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Talon;
@@ -95,6 +96,7 @@ public class Robot extends IterativeRobot {
         if (autonomousCommand != null) autonomousCommand.cancel();
         stick = new Joystick(0);
         pneumatics.compressor1.setClosedLoopControl(true);
+        pneumatics.solenoid.set(DoubleSolenoid.Value.kOff);
     }
 
     /**
@@ -107,6 +109,15 @@ public class Robot extends IterativeRobot {
         }
         if(stick.getRawButton(2)){
         	pneumatics.compressor1.stop();
+        }
+        if(stick.getRawButton(11)){
+        	pneumatics.solenoid.set(DoubleSolenoid.Value.kForward);
+        }
+        if(stick.getRawButton(10)){
+        	pneumatics.solenoid.set(DoubleSolenoid.Value.kReverse);
+        }
+        if(stick.getRawButton(3)){
+        	pneumatics.solenoid.set(DoubleSolenoid.Value.kOff);
         }
     }
 
