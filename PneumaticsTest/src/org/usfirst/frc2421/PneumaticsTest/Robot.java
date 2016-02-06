@@ -93,10 +93,8 @@ public class Robot extends IterativeRobot {
         // continue until interrupted by another command, remove
         // this line or comment it out.
         if (autonomousCommand != null) autonomousCommand.cancel();
-//        pneumatics.solenoid.set(false));
         stick = new Joystick(0);
         pneumatics.compressor1.setClosedLoopControl(true);
-//        pneumatics.compressor1.start();
     }
 
     /**
@@ -105,11 +103,9 @@ public class Robot extends IterativeRobot {
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
         if(stick.getRawButton(1)){
-//        	pneumatics.compressor1.setClosedLoopControl(true);
         	pneumatics.compressor1.start();
         }
         if(stick.getRawButton(2)){
-//        	pneumatics.compressor1.setClosedLoopControl(false);
         	pneumatics.compressor1.stop();
         }
     }
