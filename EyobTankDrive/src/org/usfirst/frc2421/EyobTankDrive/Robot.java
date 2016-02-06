@@ -102,8 +102,8 @@ public class Robot extends IterativeRobot {
         x = OI.driveStick.getX();
         y = OI.driveStick.getY();
         
-        drive.setLeftSpeed(y+x);
-        drive.setRightSpeed(y-x);
+        drive.setLeftSpeed(y);
+        drive.setRightSpeed(y);
     }
 
     /**
