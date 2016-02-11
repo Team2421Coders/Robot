@@ -63,9 +63,9 @@ public class OI {
 
         joystick1 = new Joystick(0);
         
-        outBtn = new JoystickButton(joystick1, 3);
+        outBtn = new JoystickButton(joystick1, 5);
         outBtn.whileHeld(new ballOut());
-        inBtn = new JoystickButton(joystick1, 2);
+        inBtn = new JoystickButton(joystick1, 4);
         inBtn.whileHeld(new ballIn());
 
 
