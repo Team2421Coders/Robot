@@ -100,8 +100,8 @@ public class Robot extends IterativeRobot {
      */
     Joystick stick = oi.driveStick;
 	double deadzone;
-	double x;
-	double y;
+	double x = 0;
+	double y = 0;
 	
     public void teleopPeriodic() {
     	x = stick.getX();
