@@ -66,7 +66,6 @@ public class driveCommand extends Command {
     	
 		SmartDashboard.putNumber("X Value:", xValue);
     	SmartDashboard.putNumber("Y Value:", yValue);
-    	
     	Drive.setLeft(yValue+xValue);
     	Drive.setRight(yValue-xValue);     	   	
     }
