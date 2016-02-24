@@ -63,7 +63,10 @@ public class driveCommand extends Command {
     	}else{
     		yValue = 0;
     	}
-    	
+    	if(xValue > yValue){
+    		xValue = (xValue * .2);
+    		yValue = (yValue * .2);
+    	}
 		SmartDashboard.putNumber("X Value:", xValue);
     	SmartDashboard.putNumber("Y Value:", yValue);
     	Drive.setLeft(yValue+xValue);
