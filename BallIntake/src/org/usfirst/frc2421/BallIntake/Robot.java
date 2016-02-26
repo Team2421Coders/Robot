@@ -103,9 +103,9 @@ public class Robot extends IterativeRobot {
      */
     double dist = 0;
     public void teleopPeriodic() {
-    	System.out.println("V: " + sanic.getVoltage());
-    	dist = sanic.getAverageVoltage() * (25.0/3d);
-    	SmartDashboard.putNumber("Sanic Speeds", dist);
+    	//System.out.println("V: " + sanic.getVoltage());
+    	//dist = sanic.getAverageVoltage() * (25.0/3d);
+    	//SmartDashboard.putNumber("Sanic Speeds", dist);
         Scheduler.getInstance().run();
     }
 

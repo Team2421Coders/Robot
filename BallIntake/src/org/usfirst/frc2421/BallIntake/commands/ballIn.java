@@ -52,7 +52,7 @@ public class ballIn extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	RobotMap.intakeCANJaguar1.set(0);
+    	RobotMap.intakeCANJaguar1.set(.05);
     }
 
     // Called when another command which requires one or more of the same

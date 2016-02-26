@@ -43,7 +43,7 @@ public class ballOut extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	RobotMap.intakeCANJaguar1.set(-1);
+    	RobotMap.intakeCANJaguar1.set(-.25);
     }
 
     // Make this return true when this Command no longer needs to run execute()
