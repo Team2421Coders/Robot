@@ -101,11 +101,6 @@ public class Robot extends IterativeRobot {
      */
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
-        breachSpeed = SmartDashboard.getNumber("Breach Speed:");
-        if(oi.getJoystick1().getRawButton(4))
-        	RobotMap.breachMotor.set(0.25);
-        else if(oi.getJoystick1().getRawButton(5))
-        	RobotMap.breachMotor.set(-0.25);
     }
 
     /**
