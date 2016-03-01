@@ -42,7 +42,7 @@ public class ballIn extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	RobotMap.intakeCANJaguar1.set(1);
+    	RobotMap.cdfMotor.set(1);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -52,12 +52,12 @@ public class ballIn extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	RobotMap.intakeCANJaguar1.set(0);
+    	RobotMap.cdfMotor.set(0);
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
-    	RobotMap.intakeCANJaguar1.set(0);
+    	RobotMap.cdfMotor.set(0);
     }
 }

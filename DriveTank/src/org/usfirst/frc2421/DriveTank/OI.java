@@ -61,11 +61,13 @@ public class OI {
     public static Joystick stickOther;
     JoystickButton outBtn;
     JoystickButton inBtn;
-    //JoystickButton solReverse;
-    //JoystickButton solOff;
-    //JoystickButton solForward;
+    JoystickButton solReverse;
+    JoystickButton solOff;
+    JoystickButton solForward;
     JoystickButton cdfOpen;
     JoystickButton cdfClose;
+    JoystickButton upArm;
+    JoystickButton downArm;
 
     public OI() {
     	/**Drive - Joystick 0
@@ -94,16 +96,23 @@ public class OI {
         inBtn.whileHeld(new ballIn());
         
         //pneumatics
-        //solReverse = new JoystickButton(stickOther, 8);
-        //solReverse.whenPressed(new SolenoidToggle());
-        //solOff = new JoystickButton(stickOther, 9);
-        //solOff.whenPressed(new SolenoidOff());
+        solReverse = new JoystickButton(stickOther, 8);
+        solReverse.whenPressed(new SolenoidToggle());
+        solOff = new JoystickButton(stickOther, 9);
+        solOff.whenPressed(new SolenoidOff());
+        
+        //arm window motor
+        upArm = new JoystickButton(stickOther, 4);
+        upArm.whileHeld(new armUp());
+        downArm = new JoystickButton(stickOther, 5);
+        downArm.whileHeld(new armDown());
         
         //CDF
         cdfOpen = new JoystickButton(stickDrive, 1);
         cdfOpen.whileHeld(new breachDown());
         cdfClose = new JoystickButton(stickDrive, 2);
         cdfClose.whileHeld(new breachUp());
+        
         
         // SmartDashboard Buttons
        // SmartDashboard.putData("Autonomous Command", new AutonomousCommand());
