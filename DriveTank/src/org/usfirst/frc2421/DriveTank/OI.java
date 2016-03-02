@@ -68,6 +68,7 @@ public class OI {
     JoystickButton cdfClose;
     JoystickButton upArm;
     JoystickButton downArm;
+    JoystickButton toggleComp;
 
     public OI() {
     	/**Drive - Joystick 0
@@ -100,7 +101,8 @@ public class OI {
         solReverse.whenPressed(new SolenoidToggle());
         solOff = new JoystickButton(stickOther, 9);
         solOff.whenPressed(new SolenoidOff());
-        
+        toggleComp = new JoystickButton(stickOther, 6);
+        toggleComp.whenPressed(new compToggle());
         //arm window motor
         upArm = new JoystickButton(stickOther, 4);
         upArm.whileHeld(new armUp());

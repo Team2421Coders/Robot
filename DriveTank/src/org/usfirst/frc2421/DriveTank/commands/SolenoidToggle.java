@@ -47,10 +47,10 @@ public class SolenoidToggle extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	/*if(direction)
-    		Pneumatics.doubleSolenoid1.set(DoubleSolenoid.Value.kForward);
+    	if(direction)
+    		Pneumatics.doubleSolenoid.set(DoubleSolenoid.Value.kForward);
     	else if(!direction)
-    		Pneumatics.doubleSolenoid1.set(DoubleSolenoid.Value.kReverse);*/
+    		Pneumatics.doubleSolenoid.set(DoubleSolenoid.Value.kReverse);
     }
 
     // Make this return true when this Command no longer needs to run execute()
