@@ -81,7 +81,7 @@ public class OI {
     	 * Solenoid Toggle - Joystick 1 button 8
     	 * Solenoid stop - Joystick 1 button 9
     	 * 
-    	 * CDF(Cheval de Frise) Actuator:
+    	 * CDF(Cheval du Frise) Actuator:
     	 * Open? - Joystick 0 button 1
     	 * Close? - Joystick 0 button 2
     	 */
