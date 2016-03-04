@@ -56,7 +56,7 @@ public class RobotMap {
         
         cdfMotor = new Spark(0);
         
-        breachMotor = new Spark(1); 
+//        breachMotor = new Spark(1); 
         
         armMotor = new Spark(2);
         

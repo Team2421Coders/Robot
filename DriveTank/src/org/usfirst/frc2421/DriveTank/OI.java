@@ -64,8 +64,8 @@ public class OI {
     JoystickButton solReverse;
     JoystickButton solOff;
     JoystickButton solForward;
-    JoystickButton cdfOpen;
-    JoystickButton cdfClose;
+//    JoystickButton cdfOpen;
+//    JoystickButton cdfClose;
     JoystickButton upArm;
     JoystickButton downArm;
     JoystickButton toggleComp;
@@ -110,10 +110,10 @@ public class OI {
         downArm.whileHeld(new armDown());
         
         //CDF
-        cdfOpen = new JoystickButton(stickDrive, 1);
-        cdfOpen.whileHeld(new breachDown());
-        cdfClose = new JoystickButton(stickDrive, 2);
-        cdfClose.whileHeld(new breachUp());
+//        cdfOpen = new JoystickButton(stickDrive, 1);
+//        cdfOpen.whileHeld(new breachDown());
+//        cdfClose = new JoystickButton(stickDrive, 2);
+//        cdfClose.whileHeld(new breachUp());
         
         
         // SmartDashboard Buttons
