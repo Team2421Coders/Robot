@@ -13,6 +13,8 @@ package org.usfirst.frc2421.DriveTank;
 
 import org.usfirst.frc2421.DriveTank.commands.*;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import edu.wpi.first.wpilibj.vision.USBCamera;
+import edu.wpi.first.wpilibj.CameraServer;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
@@ -69,6 +71,8 @@ public class OI {
     JoystickButton upArm;
     JoystickButton downArm;
     JoystickButton toggleComp;
+//    USBCamera cam = new USBCamera("cam1");
+//    CameraServer camServer = new CameraServer(cam);
 
     public OI() {
     	/**Drive - Joystick 0

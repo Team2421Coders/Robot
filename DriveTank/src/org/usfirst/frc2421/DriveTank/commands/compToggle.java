@@ -17,6 +17,7 @@ import edu.wpi.first.wpilibj.command.Command;
 
 import org.usfirst.frc2421.DriveTank.OI;
 import org.usfirst.frc2421.DriveTank.Robot;
+import org.usfirst.frc2421.DriveTank.RobotMap;
 import org.usfirst.frc2421.DriveTank.subsystems.Pneumatics;
 
 /**Shuts off the lift pneumatics piston
@@ -41,32 +42,30 @@ public class compToggle extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	
+    	if(RobotMap.compressor.enabled()){
+    		RobotMap.compressor.stop();
+    	}
+    	else{
+    		RobotMap.compressor.start();
+    	}
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	if(Pneumatics.compressor.enabled()){
-    		Pneumatics.compressor.stop();
-    	}
-    	else{
-    		Pneumatics.compressor.start();
-    	}
+    
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return false;
+        return true;
     }
 
     // Called once after isFinished returns true
     protected void end() {
-    	Pneumatics.compressor.stop();
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
-    	Pneumatics.compressor.stop();
     }
 }

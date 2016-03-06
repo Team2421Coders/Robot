@@ -52,7 +52,7 @@ public class RobotMap {
         driverightMotor2 = new CANTalon(3);
         LiveWindow.addActuator("Drive", "rightMotor2", driverightMotor2);
         
-        doubleSolenoid = new DoubleSolenoid(0,1);
+        doubleSolenoid = new DoubleSolenoid(0, 1);
         
         cdfMotor = new Spark(0);
         

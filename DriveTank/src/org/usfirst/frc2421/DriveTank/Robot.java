@@ -16,7 +16,7 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-
+import org.usfirst.frc2421.DriveTank.RobotMap;
 import org.usfirst.frc2421.DriveTank.commands.*;
 import org.usfirst.frc2421.DriveTank.subsystems.*;
 
@@ -83,6 +83,7 @@ public class Robot extends IterativeRobot {
      * This function is called periodically during autonomous
      */
     public void autonomousPeriodic() {
+    	SmartDashboard.putNumber("Ultrasonic Sensor", Drive.ultrasonic.getAverageVoltage()*25d/3);
         Scheduler.getInstance().run();
     }
 
@@ -94,6 +95,8 @@ public class Robot extends IterativeRobot {
         if (autonomousCommand != null) autonomousCommand.cancel();
         drive.initDefaultCommand();
         SmartDashboard.putNumber("Breach Speed:", breachSpeed);
+//        RobotMap.compressor.start();
+        RobotMap.doubleSolenoid.clearAllPCMStickyFaults();
     }
 
     /**
@@ -101,6 +104,7 @@ public class Robot extends IterativeRobot {
      */
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
+    	SmartDashboard.putNumber("Ultrasonic Sensor", Drive.ultrasonic.getAverageVoltage()*25d/3);
     }
 
     /**

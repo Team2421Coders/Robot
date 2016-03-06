@@ -45,9 +45,9 @@ public class AutonomousCommand extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	if(timer.get() < 6){
+    	if(timer.get() < 4){
         	Drive.setLeft(speed);
-        	Drive.setRight(speed*.75);
+        	Drive.setRight(speed);
     	}
     	/*if(timer.get() >= 4 && timer.get() < 8){
     		Drive.setLeft(-speed);
